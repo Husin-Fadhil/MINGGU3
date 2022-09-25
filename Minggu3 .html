@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+   
+    
+<body> 
+    <h1 style="background-color:rgb(254, 254, 255);">PAGE VALORANT KU</h1>
+
+    <div style="text-align:center"> 
+<button onclick="playPause()">Play/Pause</button> 
+<button onclick="setHalfVolume()" type="button">Set voolume half</button>
+<button onclick="setFullVolume()" type="button">Set volume to Full</button>
+<button onclick="setMutedVolume()" type="button">Set volume to Mute</button><br>
+
+<style>
+    body {
+      background-image: url('bgvalo.jpg');
+    }
+    </style>
+
+<video id="myVideo" width="50%" height="50%" autoplay="autoplay">
+  <source src="Valorant1_Trim.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+<iframe width="800" height="500"
+src="https://www.youtube.com/embed/12j5MLULvmI">
+</iframe>
+
+<script>
+var vid = document.getElementById("myVideo");
+
+function playPause() { 
+  if (myVideo.paused) 
+    myVideo.play(); 
+  else 
+    myVideo.pause(); 
+} 
+ 
+  
+function setHalfVolume() { 
+  vid.volume = 0.2;
+} 
+  
+function setFullVolume() { 
+  vid.volume = 1.0;
+} 
+
+function setMutedVolume() {
+  vid.volume = 0.0;
+}
+</script> 
+
+
+</body> 
+</html>
